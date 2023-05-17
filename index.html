@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kellogg’s Corn Flakes</title>
+    <style>
+      .isVisible{
+        visibility: hidden;
+      }
+
+    </style>
+    <script>
+      const el = document.getElementsByTagName('html')
+      // console.log();
+      el[0].classList.add('isVisible')
+    </script>
+	</head>
+	<body>
+		<div id="app">
+      <section class="loadingContainer">
+        <p class="loadingPercent"></p>
+        <div class="loader">
+          <span class="loader__indicator"></span>
+        </div>
+
+        <!-- <label for="progress__bar">loading...</label>
+        <progress id="progress__bar" value="0" max="100"/> -->
+      </section>
+			<section id="scene__container"></section>
+      <section class="hero">
+        <h1 class="heading">Crispy, Golden Flakes of Sweetened Corn</h1>
+        <p class="description">
+          For more than a century, people have started their day with the
+          original and best – Kellogg’s Corn Flakes® cereal. Loaded with iron
+          and 6 other vitamins and minerals, Kellogg's Corn Flakes cereal is a
+          great way get your family's day off to a nutritious start.
+        </p>
+      </section>
+		</div>
+		<script type="module" src="/main.js"></script>
+    <script>
+      // const el = document.getElementsByTagName('html')
+      window.addEventListener("DOMContentLoaded", ()=>{
+        el[0].classList.remove('isVisible');
+      })
+    </script>
+	</body>
+</html>
